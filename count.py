@@ -50,9 +50,9 @@ for videoID, shots in groupby(videoAndShot, lambda x: x[0]):
 
 videoCount = len(videoAndShotCount.items())
 
-print("Total Video Count : %d" % videoCount)
-print("Total Shot Count  : %d" % shotSum)
-print("Average Shot per Video : %f " % (shotSum/videoCount))
+print("The total number of videos : %d" % videoCount)
+print("The total number of shots : %d" % shotSum)
+print("The average number of shots per video : %f " % (shotSum/videoCount))
 
 od = collections.OrderedDict(sorted(videoAndShotCount.items()))
 
